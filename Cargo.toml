@@ -1,0 +1,33 @@
+[package]
+name = "tree-sitter-x12"
+description = "X12 EDI grammar for the tree-sitter parsing library"
+version = "0.1.0"
+authors = ["Kyle Huggins <kyle@huggins.io>"]
+license = "bsd-3-clause"
+readme = "README.md"
+keywords = ["incremental", "parsing", "tree-sitter", "x12"]
+categories = ["parsing", "text-editors"]
+repository = "https://github.com/hugginsio/tree-sitter-x12"
+edition = "2021"
+autoexamples = false
+
+build = "bindings/rust/build.rs"
+include = [
+  "bindings/rust/*",
+  "grammar.js",
+  "queries/*",
+  "src/*",
+  "tree-sitter.json",
+]
+
+[lib]
+path = "bindings/rust/lib.rs"
+
+[dependencies]
+tree-sitter-language = "0.1"
+
+[build-dependencies]
+cc = "1.1.22"
+
+[dev-dependencies]
+tree-sitter = "0.24.4"
