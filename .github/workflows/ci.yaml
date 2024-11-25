@@ -1,0 +1,23 @@
+name: CI
+on:
+  pull_request:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: tree-sitter/setup-action@v2
+      - run: tree-sitter generate
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    needs:
+      - generate
+    steps:
+      - uses: actions/checkout@v3
+      - uses: tree-sitter/setup-action@v2
+      - run: tree-sitter test
