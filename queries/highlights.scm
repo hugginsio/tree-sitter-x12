@@ -1,4 +1,4 @@
-(segment_header) @type
+(segment_header) @keyword
 
 [
   (element_separator)
