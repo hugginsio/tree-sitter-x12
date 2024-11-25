@@ -42,3 +42,20 @@ ISA*00*          *00*          *ZZ*HUGGINSIO      *ZZ*TREESITTER     *241123*100
     (element_separator)
     (component_element_separator)
     (segment_separator)))
+
+==================
+Interchange Control Trailer
+==================
+
+IEA*1*000000001~
+
+---
+
+(source_file
+  (segment
+    (segment_header)
+    (element_separator)
+    (numeric)
+    (element_separator)
+    (numeric)
+    (segment_separator)))
