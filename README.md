@@ -1,6 +1,6 @@
 # tree-sitter-x12
 
-A [tree-sitter] grammar for X12 EDI.
+A [tree-sitter] grammar for EDI X12.
 
 This grammar does not validate the content or structure of the EDI document. It's really just meant to enable basic highlighting support in your favorite text editors.
 
@@ -9,6 +9,12 @@ If you do need to validate the content and structure of an EDI document, I would
 ## Preview
 
 ![Highlighting Preview](img/x12.png)
+
+## Editors
+
+The following editors support EDI X12 using this grammar:
+
+- [Zed](https://zed.dev) via [hugginsio/zed-edi](https://github.com/hugginsio/zed-edi)
 
 ## Legal
 
