@@ -2,10 +2,13 @@
 
 A [tree-sitter] grammar for X12 EDI.
 
-This grammar does not validate the content or structure of the EDI document. It's really just meant to enable basic highlighting support in your
-favorite text editors.
+This grammar does not validate the content or structure of the EDI document. It's really just meant to enable basic highlighting support in your favorite text editors.
 
 If you do need to validate the content and structure of an EDI document, I would highly recommend the [Stedi EDI Inspector].
+
+## Preview
+
+![Highlighting Preview](img/x12.png)
 
 ## Legal
 
