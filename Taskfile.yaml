@@ -1,0 +1,21 @@
+# https://taskfile.dev
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+
+version: "3"
+
+tasks:
+  generate:
+    cmd: "tree-sitter generate"
+    desc: "Generate the parser"
+
+  test:
+    deps:
+      - generate
+    cmd: "tree-sitter test"
+    desc: "Run the parser's tests"
+
+  build:wasm:
+    deps:
+      - test
+    cmd: "tree-sitter build --wasm"
+    desc: "Compile the parser (WASM)"
