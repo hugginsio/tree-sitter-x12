@@ -1,0 +1,42 @@
+==================
+PO1 Loop
+==================
+
+PO1**1*8P*0*PE*GE*Tree Sitter~
+PO1**1*8P*0.001*PE*GE*X12 Grammar~
+
+---
+
+(source_file
+  (segment
+    (segment_header)
+    (element_separator)
+    (element_separator)
+    (numeric)
+    (element_separator)
+    (alphanumeric)
+    (element_separator)
+    (numeric)
+    (element_separator)
+    (alphanumeric)
+    (element_separator)
+    (alphanumeric)
+    (element_separator)
+    (alphanumeric)
+    (segment_separator))
+  (segment
+    (segment_header)
+    (element_separator)
+    (element_separator)
+    (numeric)
+    (element_separator)
+    (alphanumeric)
+    (element_separator)
+    (numeric)
+    (element_separator)
+    (alphanumeric)
+    (element_separator)
+    (alphanumeric)
+    (element_separator)
+    (alphanumeric)
+    (segment_separator)))

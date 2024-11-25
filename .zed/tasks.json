@@ -1,0 +1,18 @@
+[
+  {
+    "label": "Generate parser",
+    "command": "tree-sitter generate",
+    "allow_concurrent_runs": false,
+    "hide": "on_success",
+    "reveal": "no_focus",
+    "use_new_terminal": true
+  },
+  {
+    "label": "Run parser tests",
+    "command": "tree-sitter test",
+    "allow_concurrent_runs": false,
+    "hide": "never",
+    "reveal": "no_focus",
+    "use_new_terminal": false
+  }
+]

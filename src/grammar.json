@@ -1,0 +1,114 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/grammar.schema.json",
+  "name": "x12",
+  "rules": {
+    "source_file": {
+      "type": "REPEAT",
+      "content": {
+        "type": "SYMBOL",
+        "name": "segment"
+      }
+    },
+    "segment_header": {
+      "type": "PATTERN",
+      "value": "[A-Z][A-Z0-9]{1,2}"
+    },
+    "element_separator": {
+      "type": "STRING",
+      "value": "*"
+    },
+    "component_element_separator": {
+      "type": "STRING",
+      "value": ">"
+    },
+    "segment_separator": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "~"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "\n"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        }
+      ]
+    },
+    "numeric": {
+      "type": "PATTERN",
+      "value": "[0-9\\.]+"
+    },
+    "alphanumeric": {
+      "type": "PATTERN",
+      "value": "[A-Za-z0-9!@#$%&(),-_\\.\\s]+"
+    },
+    "segment": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "segment_header"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "element_separator"
+        },
+        {
+          "type": "REPEAT1",
+          "content": {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "element_separator"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "numeric"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "alphanumeric"
+              }
+            ]
+          }
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "component_element_separator"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "SYMBOL",
+          "name": "segment_separator"
+        }
+      ]
+    }
+  },
+  "extras": [
+    {
+      "type": "PATTERN",
+      "value": "\\s"
+    }
+  ],
+  "conflicts": [],
+  "precedences": [],
+  "externals": [],
+  "inline": [],
+  "supertypes": []
+}

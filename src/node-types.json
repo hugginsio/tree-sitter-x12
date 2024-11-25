@@ -1,0 +1,86 @@
+[
+  {
+    "type": "segment",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "alphanumeric",
+          "named": true
+        },
+        {
+          "type": "component_element_separator",
+          "named": true
+        },
+        {
+          "type": "element_separator",
+          "named": true
+        },
+        {
+          "type": "numeric",
+          "named": true
+        },
+        {
+          "type": "segment_header",
+          "named": true
+        },
+        {
+          "type": "segment_separator",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "segment_separator",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "segment",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "\n",
+    "named": false
+  },
+  {
+    "type": "alphanumeric",
+    "named": true
+  },
+  {
+    "type": "component_element_separator",
+    "named": true
+  },
+  {
+    "type": "element_separator",
+    "named": true
+  },
+  {
+    "type": "numeric",
+    "named": true
+  },
+  {
+    "type": "segment_header",
+    "named": true
+  },
+  {
+    "type": "~",
+    "named": false
+  }
+]

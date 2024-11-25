@@ -1,0 +1,28 @@
+==================
+GS Functional Group Header
+==================
+
+GS*PO*HUGGINS*8217791419*20241124*2011*1*X*008020~
+
+---
+
+(source_file
+  (segment
+    (segment_header)
+    (element_separator)
+    (alphanumeric)
+    (element_separator)
+    (alphanumeric)
+    (element_separator)
+    (numeric)
+    (element_separator)
+    (numeric)
+    (element_separator)
+    (numeric)
+    (element_separator)
+    (numeric)
+    (element_separator)
+    (alphanumeric)
+    (element_separator)
+    (numeric)
+    (segment_separator)))

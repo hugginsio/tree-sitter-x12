@@ -1,0 +1,44 @@
+==================
+Interchange Control Header
+==================
+
+ISA*00*          *00*          *ZZ*HUGGINSIO      *ZZ*TREESITTER     *241123*1009*U*00801*000000001*0*P*>~
+
+---
+
+(source_file
+  (segment
+    (segment_header)
+    (element_separator)
+    (numeric)
+    (element_separator)
+    (alphanumeric)
+    (element_separator)
+    (numeric)
+    (element_separator)
+    (alphanumeric)
+    (element_separator)
+    (alphanumeric)
+    (element_separator)
+    (alphanumeric)
+    (element_separator)
+    (alphanumeric)
+    (element_separator)
+    (alphanumeric)
+    (element_separator)
+    (numeric)
+    (element_separator)
+    (numeric)
+    (element_separator)
+    (alphanumeric)
+    (element_separator)
+    (numeric)
+    (element_separator)
+    (numeric)
+    (element_separator)
+    (numeric)
+    (element_separator)
+    (alphanumeric)
+    (element_separator)
+    (component_element_separator)
+    (segment_separator)))
