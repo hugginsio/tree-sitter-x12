@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-x12",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "X12 EDI grammar for the tree-sitter parsing library",
   "repository": "https://github.com/hugginsio/tree-sitter-x12",
   "license": "bsd-3-clause",
